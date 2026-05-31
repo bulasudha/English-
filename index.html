@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartKids English | Learn with Fun</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Cute Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Logo Section -->
+    <header>
+        <div class="logo-container">
+            <div class="animated-logo">🌟 Smart<span>Kids</span></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#books">Free Books</a></li>
+                <li><a href="#speaking">Speak Up</a></li>
+                <li><a href="#news">Kids News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero / Welcome Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="bounce-in">Welcome to Magic English World! 🎈</h1>
+            <p>Let's learn, read, and speak English in a fun way every day!</p>
+            <a href="#speaking" class="cta-btn">Start Learning Rocket! 🚀</a>
+        </div>
+        <div class="avatar-animation">
+            🤖
+        </div>
+    </section>
+
+    <!-- Free Books Section -->
+    <section id="books" class="section-container">
+        <h2 class="section-title">📚 Free Story Books for You</h2>
+        <div class="grid-container">
+            <div class="card book-card">
+                <div class="card-icon">🦁</div>
+                <h3>The Lion & The Mouse</h3>
+                <p>A beautiful story about friendship and helping others.</p>
+                <button class="read-btn" onclick="openBook('Lion')">Read Now</button>
+            </div>
+            <div class="card book-card">
+                <div class="card-icon">🐢</div>
+                <h3>The Tortoise & The Hare</h3>
+                <p>Learn why slow and steady always wins the race!</p>
+                <button class="read-btn" onclick="openBook('Tortoise')">Read Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaking Practice Section -->
+    <section id="speaking" class="section-container speaking-section">
+        <h2 class="section-title">🗣️ Speak and Practice (කතා කරමු)</h2>
+        <p>Click the button, listen to the phrase, and repeat it aloud!</p>
+        <div class="speaking-box">
+            <div id="phrase-display" class="phrase">"Hello! How are you today?"</div>
+            <button class="action-btn listen-btn" onclick="speakPhrase()">🔊 Listen & Learn</button>
+            <button class="action-btn next-btn" onclick="nextPhrase()">➡️ Next Phrase</button>
+        </div>
+    </section>
+
+    <!-- Daily English News Section -->
+    <section id="news" class="section-container">
+        <h2 class="section-title">📰 Daily Kids News (එදිනෙදා පුවත්)</h2>
+        <div id="news-container" class="news-box">
+            <!-- News dynamic content will load here via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Interactive Pop-up Modal for Books -->
+    <div id="book-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeBook()">&times;</span>
+            <h2 id="modal-title">Story Title</h2>
+            <p id="modal-body">Story content goes here...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 SmartKids English World. Created with ❤️ for GitHub.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
